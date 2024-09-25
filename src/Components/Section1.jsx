@@ -4,7 +4,7 @@ import Robotimage from "../assets/Images/vecteezy_modern-technology-workspace-ca
 function Section1() {
   return (
     <>
-      <section className="Empowering-Businesses">
+      <section id="services" className="Empowering-Businesses">
         <div className="Empowering-Businesses-header">
           <h2>Empowering Businesses with AI Solutions</h2>
         </div>

@@ -1,21 +1,15 @@
 import React from "react";
-import { FaFacebook } from "react-icons/fa";
+import { CiLocationOn } from "react-icons/ci";
+import { FaFacebook, FaGoogle, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
     <>
-      <div className="footer-container">
+      <div id="about" className="footer-container">
         <section className="footer-section">
           <div className="footer-grid">
             <div className="footer-branding">
-              <h1>
-                <a href="/#home" className="">
-                  Druze
-                  <span className="inline-block font-bold text-primary">
-                    Analytics
-                  </span>
-                </a>
-              </h1>
+              <h1>Druze Analytics</h1>
               <p>
                 Druze Analytics is a cutting-edge technology company dedicated
                 to transforming businesses through innovative AI-driven
@@ -30,14 +24,6 @@ function Footer() {
                 competitive digital landscape.
               </p>
               <br />
-              <div className="contact-info">
-                <FaFacebook />
-                <p>Noida, Uttar Pradesh</p>
-              </div>
-              <div className="contact-info">
-                <FaFacebook />
-                <p>+917204309993</p>
-              </div>
             </div>
             <div className="footer-links-grid">
               <div className="footer-links">
@@ -50,6 +36,17 @@ function Footer() {
                 </ul>
               </div>
               <div className="footer-links">
+                <h1 className="footer-title">ContactUs</h1>
+                <div className="contact-info">
+                  <CiLocationOn />
+                  <p>Noida, Uttar Pradesh</p>
+                </div>
+                <div className="contact-info">
+                  <FaFacebook />
+                  <p>+917204309993</p>
+                </div>
+              </div>
+              <div className="footer-links">
                 <h1 className="footer-title">Links</h1>
                 <ul>
                   <li>Privacy Policy</li>
@@ -58,7 +55,7 @@ function Footer() {
                 </ul>
               </div>
               <div className="social-links-section">
-                <h1 className="social-links-title">Social Links</h1>
+                <h1 className="footer-title">Social Links</h1>
                 <div className="flex flex-col gap-3">
                   <h1>Subscribe to our newsletter</h1>
                   <input
@@ -71,17 +68,20 @@ function Footer() {
                       <FaFacebook className="text-3xl" />
                     </a>
                     <a href="#">
-                      <FaFacebook className="text-3xl" />
+                      <FaInstagram className="text-3xl" />
                     </a>
                     <a href="#">
-                      <FaFacebook className="text-3xl" />
+                      <FaLinkedin className="text-3xl" />
+                    </a>
+                    <a href="#">
+                      <FaGoogle className="text-3xl" />
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="footer-bottom">© 2024 DruzeAnalytics || Rohan</div>
+          <div className="footer-bottom">©️ 2024 DruzeAnalytics || Rohan</div>
         </section>
       </div>
     </>

@@ -1,23 +1,21 @@
-import React from 'react'
-
-function Header() {
+function Header({handleScroll}) {
+  
   return (
 <>
 <header className="header">
       <div className="logo">
         <h1>Druze Analytics</h1>
-      </div>
-      <nav className="nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+      </div>     
+        <ul className="nav">
+          <li><button onClick={() => handleScroll('Home')}>Home</button></li>
+          <li><button onClick={() => handleScroll('about')}>About Us</button></li>
+          <li><button onClick={() => handleScroll('services')}>Services</button></li>
+          <li><button onClick={() => handleScroll('contact')}>Contact</button></li>
         </ul>
-      </nav>
+        
     </header>
 </>
 )
 }
 
-export default Header
+export default Header;

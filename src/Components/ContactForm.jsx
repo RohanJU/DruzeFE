@@ -1,9 +1,8 @@
-import React from 'react';
 import analyticsimages from "../assets/Images/vecteezy_3d-character-person-doing-online-store-digital-marketing_11665514.png";
 
 function ContactForm() {
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <h1 className="contact-heading">Get in Touch with Us</h1>
       <p className="contact-subheading">
         Reach out for innovative AI-driven solutions tailored to your needs.
@@ -47,8 +46,8 @@ function ContactForm() {
 
         {/* Contact Image Section */}
         <div className="contact-image">
-          <img 
-            src={analyticsimages} 
+          <img
+            src={analyticsimages}
             alt="3D Character Person Doing Online Store Digital Marketing"
             className="image"
           />

@@ -1,19 +1,22 @@
 import React from "react";
-import Dataanalyticsimage from '../assets/Images/Dataanalytics.png';
-import Customwebsiteimage from '../assets/Images/Customwebsite.png';
-import Robustsoftwareimages from '../assets/Images/Roobustsoftware.png'
+import Customwebsiteimage from "../assets/Images/Customwebsite.png";
+import Dataanalyticsimage from "../assets/Images/Dataanalytics.png";
+import Robustsoftwareimages from "../assets/Images/Roobustsoftware.png";
 function Herosection() {
   return (
     <>
-      <div className="hero-section">
+      <div id="Home" className="hero-section">
         <div className="hero-content">
-          <h1>Transform Your<br/> Business with AI Solutions</h1>
+          <h1>
+            Transform Your
+            <br /> Business with AI Solutions
+          </h1>
           <p>Innovative analytics and tailored software for growth.</p>
           <button className="get-started-button">Get Started</button>
         </div>
         <div className="features">
           <div className="feature-card">
-            <img src= {Dataanalyticsimage} alt="Analytics" />
+            <img src={Dataanalyticsimage} alt="Analytics" />
             <p>Data analytics to enhance your business strategy.</p>
           </div>
           <div className="feature-card">
